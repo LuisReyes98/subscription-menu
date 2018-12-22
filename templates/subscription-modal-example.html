@@ -1,5 +1,30 @@
 <div class="w-full flex flex-wrap p-2 text-center justify-center content-center px-2 py-2">
-  
+
+  <input type="checkbox" name="" id="input-subscription-modal" class="input__hidden" >
+
+  <div class="modal__container flex flex-wrap justify-center content-center" id="modal-container">
+    <div class="modal__content bg-white" id="modal-content">
+      <div class="modal__header flex">
+        <h1 class="">
+          Sign up
+        </h1>
+        <label for="input-subscription-modal">
+          <i class="mdi mdi-close"></i>
+        </label>
+      </div>
+      <div class="modal__message flex flex-wrap p-3">
+        <input type="text"  class="w-full my-2 py-2 px-2 bg-grey-lighter appearance-none border-2 border-grey-lighter rounded  text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black focus:text-black"  placeholder="Name">
+
+        <input type="email"  class="w-full my-2 py-2 px-2 bg-grey-lighter appearance-none border-2 border-grey-lighter rounded  text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black focus:text-black" placeholder="Email">
+
+        <input type="password" class="w-full my-2 py-2 px-2 bg-grey-lighter appearance-none border-2 border-grey-lighter rounded  text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black focus:text-black"  placeholder="Password">
+
+        <input type="tel" class="w-full my-2 py-2 px-2 bg-grey-lighter appearance-none border-2 border-grey-lighter rounded  text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black focus:text-black"  placeholder="Telephone">
+
+      </div>
+    </div>
+  </div>
+
   <h1 class="w-full text-5xl text-white">Subscription Sign up Form</h1>
 
   <div class="subscription__card overflow-hidden rounded mx-2 my-2 ">
@@ -20,9 +45,9 @@
                 
       </div>
       <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-yellow-dark hover:text-black ">
+        <label for="input-subscription-modal" class="text-white subscription__button bg-yellow-dark hover:text-black ">
           Sign up
-        </a>
+        </label>
       </div>
     </div>
 
@@ -47,9 +72,9 @@
     
       </div>
       <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-pink-dark hover:text-black ">
+        <label for="input-subscription-modal" class="text-white subscription__button bg-pink-dark hover:text-black ">
           Sign up
-        </a>
+        </label>
       </div>
     </div>
 
@@ -73,9 +98,9 @@
     
       </div>
       <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-teal-dark hover:text-black ">
+        <label for="input-subscription-modal" class="text-white subscription__button bg-teal-dark hover:text-black ">
           Sign up
-        </a>
+        </label>
       </div>
     </div>
   </div>
