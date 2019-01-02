@@ -1,0 +1,29 @@
+<!-- Example of the implementention of this 
+  template in the base.html and the elements
+  that need to be added-->
+{# extends "^/layouts/base.html" #}
+  
+{% block style %}
+  {{ super() }}  
+  <!-- headers must be added in the 
+    style block in base.html -->
+
+  {% include "headers/subscription.html" %}
+
+{% endblock style %}
+
+{% block content %}
+  {{ super() }}
+  <!-- template can be added anywhere in the html body -->
+
+  <!-- Any of the following may be added: -->
+
+  <!-- template that iterates in given data -->
+  {% include "templates/subscription.html" %}
+
+  <!-- static example of the template -->
+  {% include "chunks/subscription-example.html" %}
+
+  <!-- static example of the template with a modal  -->
+  {% include "chunks/subscription-modal-example.html" %}
+{% endblock content %}
