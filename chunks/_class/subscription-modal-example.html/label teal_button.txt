@@ -1,0 +1,4 @@
+text-white
+subscription__button
+bg-teal-dark
+hover:text-black

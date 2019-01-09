@@ -1,24 +1,24 @@
-<div class="w-full flex flex-wrap p-2 text-center justify-center content-center px-2 py-2">
-  
-  <h1 class="w-full text-5xl text-white">Subscription Sign up Form</h1>
+<div container_xl>
 
-  <div class="subscription__card overflow-hidden rounded mx-2 my-2 ">
-    <div class="text-white custom__yellow__dark py-5 px-2 ">
-      <h2 class="text-4xl">Basic</h2>
+  <h1 title_xl>Subscription Sign up Form</h1>
+
+  <div subscription_container>
+    <div yellow_header>
+      <h2 big_text>Basic</h2>
     </div>
-    <div class="px-2 py-2 bg-yellow-dark text-white" >
-      <h2 class="" >{{ BASIC_PRICE }}$</h2>
-      <h3 class="">per month</h3>    
+    <div yellow_body >
+      <h2  >{{ BASIC_PRICE }}$</h2>
+      <h3 >per month</h3>    
     </div>
-    <div class="bg-white">
-      <div class="py-4">
+    <div white_bg>
+      <div padding_y>
         {% for name in basic_perks %}
-          <p class="py-3 px-2">{{ name | safe }}</p>  
+          <p padding_x_y>{{ name | safe }}</p>  
 
         {% endfor %}                
       </div>
-      <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-yellow-dark hover:text-black ">
+      <div subscription_footer>
+        <a yellow_button href="#" for="input-subscription-modal">
           Sign up
         </a>
       </div>
@@ -27,24 +27,24 @@
   </div>
 
 
-  <div class="subscription__card overflow-hidden rounded mx-2 my-2">
-    <div class="text-white bg-pink-darker py-5 px-2 ">
-      <h2 class="text-4xl">Standard</h2>
+  <div subscription_container>
+    <div pink_header>
+      <h2 big_text>Standard</h2>
     </div>
-    <div class="px-2 py-2 bg-pink-dark text-white">
-      <h2 class="">{{ STANDARD_PRICE }}$</h2>
-      <h3 class="">per month</h3>
+    <div pink_body>
+      <h2 >{{ STANDARD_PRICE }}$</h2>
+      <h3 >per month</h3>
     </div>
-    <div class="bg-white">
-      <div class="py-4">
+    <div white_bg>
+      <div padding_y>
         {% for name in standard_perks %}
-          <p class="py-3 px-2">{{ name | safe }}</p>  
+          <p padding_x_y>{{ name | safe }}</p>  
 
         {% endfor %}
     
       </div>
-      <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-pink-dark hover:text-black ">
+      <div subscription_footer>
+        <a pink_button href="#" for="input-subscription-modal" >
           Sign up
         </a>
       </div>
@@ -52,24 +52,24 @@
 
   </div>
 
-  <div class="subscription__card overflow-hidden rounded mx-2 my-2">  
-    <div class="text-white bg-teal-darker py-5 px-2 ">
-      <h2 class="text-4xl">Premium</h2>
+  <div subscription_container>  
+    <div teal_header>
+      <h2 big_text>Premium</h2>
     </div>
-    <div class="px-2 py-2 bg-teal-dark text-white">
-      <h2 class="">{{ PREMIUM_PRICE }}$</h2>
-      <h3 class="">per month</h3>
+    <div teal_body>
+      <h2 >{{ PREMIUM_PRICE }}$</h2>
+      <h3 >per month</h3>
     </div>
-    <div class="bg-white">
-      <div class="py-4">
+    <div white_bg>
+      <div padding_y>
         {% for name in premium_perks %}
-          <p class="py-3 px-2">{{ name | safe }}</p>  
+          <p padding_x_y>{{ name | safe }}</p>  
 
         {% endfor %}
     
       </div>
-      <div class="py-2 px-2 flex justify-center ">
-        <a href="#" for="input-subscription-modal" class="text-white subscription__button bg-teal-dark hover:text-black ">
+      <div subscription_footer>
+        <a teal_button href="#" for="input-subscription-modal" >
           Sign up
         </a>
       </div>

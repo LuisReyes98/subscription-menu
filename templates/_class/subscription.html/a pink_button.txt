@@ -1,0 +1,5 @@
+text-white
+subscription__button
+bg-pink-dark
+hover:text-black
+link__main

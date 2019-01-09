@@ -1,0 +1,5 @@
+modal__container
+flex
+flex-wrap
+justify-center
+content-center

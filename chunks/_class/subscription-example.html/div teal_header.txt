@@ -1,0 +1,4 @@
+text-white
+bg-teal-darker
+py-5
+px-2
