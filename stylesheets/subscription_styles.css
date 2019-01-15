@@ -1089,7 +1089,7 @@
     opacity: 1; }
   to {
     opacity: 0; } }
-.fadeOut, .modal__container {
+.fadeOut, .modal__container, #year_container, #yearly_monthly:checked ~ #month_container {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut; }
 
@@ -1289,7 +1289,7 @@
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .flip.modal__container, .modal__container .flip.modal__content, #input-subscription-modal:checked ~ .flip#modal-container, #input-subscription-modal:checked ~ #modal-container .flip#modal-content {
+.animated.flip, .flip.container__visible__subs, .flip#month_container, #yearly_monthly:checked ~ .flip#year_container, .flip.container__hidden__subs, .flip#year_container, #yearly_monthly:checked ~ .flip#month_container, .flip.modal__container, .modal__container .flip.modal__content, #input-subscription-modal:checked ~ .flip#modal-container, #input-subscription-modal:checked ~ #modal-container .flip#modal-content {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -1949,7 +1949,7 @@
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
-.zoomIn, #input-subscription-modal:checked ~ #modal-container #modal-content {
+.zoomIn, #month_container, #yearly_monthly:checked ~ #year_container, #input-subscription-modal:checked ~ #modal-container #modal-content {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn; }
 
@@ -2375,68 +2375,91 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .modal__container, .modal__container .modal__content, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
+.animated, .container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container, .container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container, .modal__container, .modal__container .modal__content, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .infinite.modal__container, .modal__container .infinite.modal__content, #input-subscription-modal:checked ~ .infinite#modal-container, #input-subscription-modal:checked ~ #modal-container .infinite#modal-content {
+.animated.infinite, .infinite.container__visible__subs, .infinite#month_container, #yearly_monthly:checked ~ .infinite#year_container, .infinite.container__hidden__subs, .infinite#year_container, #yearly_monthly:checked ~ .infinite#month_container, .infinite.modal__container, .modal__container .infinite.modal__content, #input-subscription-modal:checked ~ .infinite#modal-container, #input-subscription-modal:checked ~ #modal-container .infinite#modal-content {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .delay-1s.modal__container, .modal__container .delay-1s.modal__content, #input-subscription-modal:checked ~ .delay-1s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-1s#modal-content {
+.animated.delay-1s, .delay-1s.container__visible__subs, .delay-1s#month_container, #yearly_monthly:checked ~ .delay-1s#year_container, .delay-1s.container__hidden__subs, .delay-1s#year_container, #yearly_monthly:checked ~ .delay-1s#month_container, .delay-1s.modal__container, .modal__container .delay-1s.modal__content, #input-subscription-modal:checked ~ .delay-1s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-1s#modal-content {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .delay-2s.modal__container, .modal__container .delay-2s.modal__content, #input-subscription-modal:checked ~ .delay-2s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-2s#modal-content {
+.animated.delay-2s, .delay-2s.container__visible__subs, .delay-2s#month_container, #yearly_monthly:checked ~ .delay-2s#year_container, .delay-2s.container__hidden__subs, .delay-2s#year_container, #yearly_monthly:checked ~ .delay-2s#month_container, .delay-2s.modal__container, .modal__container .delay-2s.modal__content, #input-subscription-modal:checked ~ .delay-2s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-2s#modal-content {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .delay-3s.modal__container, .modal__container .delay-3s.modal__content, #input-subscription-modal:checked ~ .delay-3s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-3s#modal-content {
+.animated.delay-3s, .delay-3s.container__visible__subs, .delay-3s#month_container, #yearly_monthly:checked ~ .delay-3s#year_container, .delay-3s.container__hidden__subs, .delay-3s#year_container, #yearly_monthly:checked ~ .delay-3s#month_container, .delay-3s.modal__container, .modal__container .delay-3s.modal__content, #input-subscription-modal:checked ~ .delay-3s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-3s#modal-content {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .delay-4s.modal__container, .modal__container .delay-4s.modal__content, #input-subscription-modal:checked ~ .delay-4s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-4s#modal-content {
+.animated.delay-4s, .delay-4s.container__visible__subs, .delay-4s#month_container, #yearly_monthly:checked ~ .delay-4s#year_container, .delay-4s.container__hidden__subs, .delay-4s#year_container, #yearly_monthly:checked ~ .delay-4s#month_container, .delay-4s.modal__container, .modal__container .delay-4s.modal__content, #input-subscription-modal:checked ~ .delay-4s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-4s#modal-content {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .delay-5s.modal__container, .modal__container .delay-5s.modal__content, #input-subscription-modal:checked ~ .delay-5s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-5s#modal-content {
+.animated.delay-5s, .delay-5s.container__visible__subs, .delay-5s#month_container, #yearly_monthly:checked ~ .delay-5s#year_container, .delay-5s.container__hidden__subs, .delay-5s#year_container, #yearly_monthly:checked ~ .delay-5s#month_container, .delay-5s.modal__container, .modal__container .delay-5s.modal__content, #input-subscription-modal:checked ~ .delay-5s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-5s#modal-content {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .fast.modal__container, .modal__container .fast.modal__content, #input-subscription-modal:checked ~ .fast#modal-container, #input-subscription-modal:checked ~ #modal-container .fast#modal-content {
+.animated.fast, .fast.container__visible__subs, .fast#month_container, #yearly_monthly:checked ~ .fast#year_container, .fast.container__hidden__subs, .fast#year_container, #yearly_monthly:checked ~ .fast#month_container, .fast.modal__container, .modal__container .fast.modal__content, #input-subscription-modal:checked ~ .fast#modal-container, #input-subscription-modal:checked ~ #modal-container .fast#modal-content {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .faster.modal__container, .modal__container .faster.modal__content, #input-subscription-modal:checked ~ .faster#modal-container, #input-subscription-modal:checked ~ #modal-container .faster#modal-content {
+.animated.faster, .faster.container__visible__subs, .faster#month_container, #yearly_monthly:checked ~ .faster#year_container, .faster.container__hidden__subs, .faster#year_container, #yearly_monthly:checked ~ .faster#month_container, .faster.modal__container, .modal__container .faster.modal__content, #input-subscription-modal:checked ~ .faster#modal-container, #input-subscription-modal:checked ~ #modal-container .faster#modal-content {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .slow.modal__container, .modal__container .slow.modal__content, #input-subscription-modal:checked ~ .slow#modal-container, #input-subscription-modal:checked ~ #modal-container .slow#modal-content {
+.animated.slow, .slow.container__visible__subs, .slow#month_container, #yearly_monthly:checked ~ .slow#year_container, .slow.container__hidden__subs, .slow#year_container, #yearly_monthly:checked ~ .slow#month_container, .slow.modal__container, .modal__container .slow.modal__content, #input-subscription-modal:checked ~ .slow#modal-container, #input-subscription-modal:checked ~ #modal-container .slow#modal-content {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .slower.modal__container, .modal__container .slower.modal__content, #input-subscription-modal:checked ~ .slower#modal-container, #input-subscription-modal:checked ~ #modal-container .slower#modal-content {
+.animated.slower, .slower.container__visible__subs, .slower#month_container, #yearly_monthly:checked ~ .slower#year_container, .slower.container__hidden__subs, .slower#year_container, #yearly_monthly:checked ~ .slower#month_container, .slower.modal__container, .modal__container .slower.modal__content, #input-subscription-modal:checked ~ .slower#modal-container, #input-subscription-modal:checked ~ #modal-container .slower#modal-content {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .modal__container, .modal__container .modal__content, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
+  .animated, .container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container, .container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container, .modal__container, .modal__container .modal__content, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
     transition: none !important; } }
+.perks_container {
+  transition: border-bottom 0.3s; }
+
+.container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container {
+  transition: display 0.5s;
+  -webkit-transition: display 0.5s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  display: block; }
+
+.container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container {
+  transition: display 0.5s;
+  -webkit-transition: display 0.5s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  display: none; }
+
 .subscription__card {
   border-radius: 0.25rem;
-  width: 20%;
+  width: 25%;
   height: auto;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s; }
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s; }
   .subscription__card:hover {
     z-index: 10;
-    transform: scale(1.05); }
+    transform: scale(1.1); }
+    .subscription__card:hover .perks_container {
+      border-bottom: 1px solid #dddddd; }
 
 .subscription__button {
   display: inline-block;
@@ -2482,6 +2505,17 @@
 .input__hidden {
   display: none;
   visibility: hidden; }
+
+.month_switch {
+  background-color: #f1f5f8; }
+
+.year_switch {
+  background-color: transparent; }
+
+#yearly_monthly:checked ~ label .month_switch {
+  background-color: transparent; }
+#yearly_monthly:checked ~ label .year_switch {
+  background-color: #f1f5f8; }
 
 #input-subscription-modal:checked ~ #modal-container {
   display: block;

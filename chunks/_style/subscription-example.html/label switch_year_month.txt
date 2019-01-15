@@ -1,0 +1,6 @@
+bg-grey-dark
+border-grey-darker
+rounded-lg
+flex
+inline-flex
+overflow-hidden

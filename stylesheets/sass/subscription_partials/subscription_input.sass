@@ -1,0 +1,51 @@
+.input__hidden
+  display: none
+  visibility: hidden
+
+#month_container
+  @extend .container__visible__subs
+  @extend .zoomIn
+#year_container
+  @extend .container__hidden__subs
+  @extend .fadeOut
+
+.month_switch
+  background-color: #f1f5f8
+.year_switch  
+  background-color: transparent
+
+#yearly_monthly
+  &:checked
+    ~ 
+      #month_container
+        @extend .container__hidden__subs
+        @extend .fadeOut
+
+      #year_container
+        @extend .container__visible__subs
+        @extend .zoomIn
+
+      label 
+        .month_switch
+          background-color: transparent
+        .year_switch  
+          background-color: #f1f5f8        
+
+
+#input-subscription-modal
+  &:checked
+    ~ #modal-container
+        @extend .animated
+        @extend .fadeIn
+        display: block
+        visibility: visible
+        animation-delay: 0s
+        -webkit-animation-delay: 0s
+        -moz-animation-delay: 0s
+        
+        #modal-content          
+          @extend .animated
+          @extend .zoomIn
+          animation-delay: 0.4s
+          -webkit-animation-delay: 0.4s
+          -moz-animation-delay: 0.4s
