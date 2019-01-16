@@ -1,2 +1,0 @@
-side_button_modal
-font-bold
