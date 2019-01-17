@@ -4,3 +4,5 @@ rounded-lg
 flex
 inline-flex
 overflow-hidden
+label_switch
+layer

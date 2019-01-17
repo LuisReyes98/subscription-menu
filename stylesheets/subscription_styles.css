@@ -2474,17 +2474,6 @@
   display: none;
   visibility: hidden; }
 
-.month_switch {
-  background-color: #f1f5f8; }
-
-.year_switch {
-  background-color: transparent; }
-
-#yearly_monthly:checked ~ label .month_switch {
-  background-color: transparent; }
-#yearly_monthly:checked ~ label .year_switch {
-  background-color: #f1f5f8; }
-
 #input-subscription-modal:checked ~ #modal-container {
   display: block;
   visibility: visible;
@@ -2495,5 +2484,52 @@
     animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s; }
+
+.label_switch {
+  width: calc( 50px * 2.5 );
+  height: 50px; }
+
+.rect-flip {
+  overflow: visible; }
+  .rect-flip .layer {
+    background-color: #c0ebf7; }
+  .rect-flip .knobs {
+    perspective: calc( 50px * 2.5 ); }
+    .rect-flip .knobs:before, .rect-flip .knobs:after, .rect-flip .knobs span {
+      position: absolute;
+      top: 4px;
+      border-radius: 2px; }
+    .rect-flip .knobs:after, .rect-flip .knobs:before {
+      width: calc( (calc( 50px * 2.5 ) - 6px ) / 2 );
+      height: calc( 50px - 5px );
+      color: #111111;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1;
+      padding-top: calc( 50px / 5);
+      padding-left: 6px;
+      padding-right: 6px; }
+    .rect-flip .knobs span {
+      right: 4px;
+      width: calc( (calc( 50px * 2.5 ) - 4px ) / 2.1 );
+      height: calc( 50px  - 10px);
+      background-color: #2cdaea;
+      transform: rotateY(0);
+      transform-origin: 0% 50%;
+      transition: 0.6s ease all;
+      z-index: 1; }
+    .rect-flip .knobs:before {
+      content: attr(data-yes);
+      left: 4px; }
+    .rect-flip .knobs:after {
+      content: attr(data-no);
+      right: 4px; }
+
+#yearly_monthly:checked ~ #rect-flip .rect-flip .layer {
+  background-color: #c0f7cb; }
+#yearly_monthly:checked ~ #rect-flip .rect-flip .knobs span {
+  transform: rotateY(-180deg);
+  background-color: #2cea52; }
 
 /*# sourceMappingURL=subscription_styles.css.map */

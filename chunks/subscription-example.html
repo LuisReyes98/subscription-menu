@@ -2,15 +2,25 @@
   <input hidden_input type="checkbox" id="yearly_monthly">
   <h1 title_xl>Subscription Sign up Form</h1>
 
-  
-  <label switch_year_month for="yearly_monthly">
-    <div month_label>
-      <h3> Month </h3>
+      
+  <section id="rect-flip">
+    <div class="toggle-button-cover rect-flip">
+      <div class="button-cover ">
+
+        <div class="button b2 " role="switch" aria-label="CSS Toggle Button" aria-checked="true">
+          <label for="yearly_monthly">
+            <div data-yes="Month" data-no="Year" class="knobs">
+              <span>
+              </span>
+            </div>
+          </label>  
+            <label switch_year_month for="yearly_monthly">
+            </label>
+        </div>
+      </div>
     </div>
-    <div year_label>
-      <h3> Year </h3>
-    </div>
-  </label>
+  </section>
+
   <!-- Montly prices -->
   <div montly_pack id="month_container">
     <div plan_container>
