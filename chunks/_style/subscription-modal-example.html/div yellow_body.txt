@@ -1,4 +1,0 @@
-px-2
-py-2
-bg-yellow-dark
-text-white
