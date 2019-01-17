@@ -23,7 +23,7 @@ $switch_w: calc( #{$switch_h} * 2.5 )
 
   .knobs 
     //important how close the 3D animation looks like
-    perspective: $switch_w 
+    perspective: calc( #{$switch_w} + 15px )
 
     &:before, &:after, span
       position: absolute

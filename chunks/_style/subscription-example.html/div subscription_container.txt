@@ -1,6 +1,5 @@
 subscription__card
 overflow-hidden
 rounded
-bg-white
 mx-2
 my-2

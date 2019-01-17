@@ -1,37 +1,51 @@
 .perks_container
   transition: border-bottom 0.3s
 
-.container__visible__subs
-  @extend .animated
-  transition: display 0.5s
-  -webkit-transition: display 0.5s
-  animation-delay: 0s
-  -webkit-animation-delay: 0s
-  animation-duration: 0.5s	
-  -webkit-animation-duration: 0.5s
-  display: block
+$visible_delay: 0s
+$visible_duration: 1s
 
-.container__hidden__subs
+.menu__visible
   @extend .animated
-  transition: display 0.5s
-  -webkit-transition: display 0.5s
-  animation-delay: 0s
-  -webkit-animation-delay: 0s
-  animation-duration: 0.5s	
-  -webkit-animation-duration: 0.5s
+  display: block  
+  animation-delay: $visible_delay
+  -webkit-animation-delay: $visible_delay
+  -moz-animation-delay: $visible_delay
+  
+  animation-duration: $visible_duration	
+  -webkit-animation-duration: $visible_duration
+  -moz-animation-duration: $visible_duration
+
+$hidden_delay: 0s  
+$hidden_duration: 1s
+
+.menu__hidden
+  @extend .animated  
   display: none
+  
+  animation-delay: $hidden_delay
+  -webkit-animation-delay: $hidden_delay
+  -moz-animation-delay: $hidden_delay
+  
+  animation-duration: $hidden_duration	
+  -webkit-animation-duration: $hidden_duration
+  -moz-animation-duration: $hidden_duration
+
+
+
 
 .subscription__card
   border-radius: .25rem
-  width: 25%
+  width: 20%
   height: auto
+  margin-right: 15px
+  margin-left: 15px
   transition: all 0.3s  //for the scale delay
   -webkit-transition: all 0.3s //for the scale delay
   -moz-transition: all 0.3s //for the scale delay
 
   &:hover  
     z-index: 10
-    transform: scale(1.1)
+    transform: scale(1.23)
     
     .perks_container
       border-bottom: 1px solid #dddddd

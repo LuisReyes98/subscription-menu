@@ -899,7 +899,7 @@
     opacity: 0; }
   to {
     opacity: 1; } }
-.fadeIn, #input-subscription-modal:checked ~ #modal-container {
+.fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
@@ -1089,7 +1089,7 @@
     opacity: 1; }
   to {
     opacity: 0; } }
-.fadeOut, #year_container, #yearly_monthly:checked ~ #month_container {
+.fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut; }
 
@@ -1289,7 +1289,7 @@
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .flip.container__visible__subs, .flip#month_container, #yearly_monthly:checked ~ .flip#year_container, .flip.container__hidden__subs, .flip#year_container, #yearly_monthly:checked ~ .flip#month_container, #input-subscription-modal:checked ~ .flip#modal-container, #input-subscription-modal:checked ~ #modal-container .flip#modal-content {
+.animated.flip, .flip.menu__visible, .flip#month_container, #yearly_monthly:checked ~ .flip#year_container, .flip.menu__hidden, .flip#year_container, #yearly_monthly:checked ~ .flip#month_container {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -1949,7 +1949,7 @@
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
-.zoomIn, #month_container, #yearly_monthly:checked ~ #year_container, #input-subscription-modal:checked ~ #modal-container #modal-content {
+.zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn; }
 
@@ -2375,54 +2375,54 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container, .container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
+.animated, .menu__visible, #month_container, #yearly_monthly:checked ~ #year_container, .menu__hidden, #year_container, #yearly_monthly:checked ~ #month_container {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .infinite.container__visible__subs, .infinite#month_container, #yearly_monthly:checked ~ .infinite#year_container, .infinite.container__hidden__subs, .infinite#year_container, #yearly_monthly:checked ~ .infinite#month_container, #input-subscription-modal:checked ~ .infinite#modal-container, #input-subscription-modal:checked ~ #modal-container .infinite#modal-content {
+.animated.infinite, .infinite.menu__visible, .infinite#month_container, #yearly_monthly:checked ~ .infinite#year_container, .infinite.menu__hidden, .infinite#year_container, #yearly_monthly:checked ~ .infinite#month_container {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .delay-1s.container__visible__subs, .delay-1s#month_container, #yearly_monthly:checked ~ .delay-1s#year_container, .delay-1s.container__hidden__subs, .delay-1s#year_container, #yearly_monthly:checked ~ .delay-1s#month_container, #input-subscription-modal:checked ~ .delay-1s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-1s#modal-content {
+.animated.delay-1s, .delay-1s.menu__visible, .delay-1s#month_container, #yearly_monthly:checked ~ .delay-1s#year_container, .delay-1s.menu__hidden, .delay-1s#year_container, #yearly_monthly:checked ~ .delay-1s#month_container {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .delay-2s.container__visible__subs, .delay-2s#month_container, #yearly_monthly:checked ~ .delay-2s#year_container, .delay-2s.container__hidden__subs, .delay-2s#year_container, #yearly_monthly:checked ~ .delay-2s#month_container, #input-subscription-modal:checked ~ .delay-2s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-2s#modal-content {
+.animated.delay-2s, .delay-2s.menu__visible, .delay-2s#month_container, #yearly_monthly:checked ~ .delay-2s#year_container, .delay-2s.menu__hidden, .delay-2s#year_container, #yearly_monthly:checked ~ .delay-2s#month_container {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .delay-3s.container__visible__subs, .delay-3s#month_container, #yearly_monthly:checked ~ .delay-3s#year_container, .delay-3s.container__hidden__subs, .delay-3s#year_container, #yearly_monthly:checked ~ .delay-3s#month_container, #input-subscription-modal:checked ~ .delay-3s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-3s#modal-content {
+.animated.delay-3s, .delay-3s.menu__visible, .delay-3s#month_container, #yearly_monthly:checked ~ .delay-3s#year_container, .delay-3s.menu__hidden, .delay-3s#year_container, #yearly_monthly:checked ~ .delay-3s#month_container {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .delay-4s.container__visible__subs, .delay-4s#month_container, #yearly_monthly:checked ~ .delay-4s#year_container, .delay-4s.container__hidden__subs, .delay-4s#year_container, #yearly_monthly:checked ~ .delay-4s#month_container, #input-subscription-modal:checked ~ .delay-4s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-4s#modal-content {
+.animated.delay-4s, .delay-4s.menu__visible, .delay-4s#month_container, #yearly_monthly:checked ~ .delay-4s#year_container, .delay-4s.menu__hidden, .delay-4s#year_container, #yearly_monthly:checked ~ .delay-4s#month_container {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .delay-5s.container__visible__subs, .delay-5s#month_container, #yearly_monthly:checked ~ .delay-5s#year_container, .delay-5s.container__hidden__subs, .delay-5s#year_container, #yearly_monthly:checked ~ .delay-5s#month_container, #input-subscription-modal:checked ~ .delay-5s#modal-container, #input-subscription-modal:checked ~ #modal-container .delay-5s#modal-content {
+.animated.delay-5s, .delay-5s.menu__visible, .delay-5s#month_container, #yearly_monthly:checked ~ .delay-5s#year_container, .delay-5s.menu__hidden, .delay-5s#year_container, #yearly_monthly:checked ~ .delay-5s#month_container {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .fast.container__visible__subs, .fast#month_container, #yearly_monthly:checked ~ .fast#year_container, .fast.container__hidden__subs, .fast#year_container, #yearly_monthly:checked ~ .fast#month_container, #input-subscription-modal:checked ~ .fast#modal-container, #input-subscription-modal:checked ~ #modal-container .fast#modal-content {
+.animated.fast, .fast.menu__visible, .fast#month_container, #yearly_monthly:checked ~ .fast#year_container, .fast.menu__hidden, .fast#year_container, #yearly_monthly:checked ~ .fast#month_container {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .faster.container__visible__subs, .faster#month_container, #yearly_monthly:checked ~ .faster#year_container, .faster.container__hidden__subs, .faster#year_container, #yearly_monthly:checked ~ .faster#month_container, #input-subscription-modal:checked ~ .faster#modal-container, #input-subscription-modal:checked ~ #modal-container .faster#modal-content {
+.animated.faster, .faster.menu__visible, .faster#month_container, #yearly_monthly:checked ~ .faster#year_container, .faster.menu__hidden, .faster#year_container, #yearly_monthly:checked ~ .faster#month_container {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .slow.container__visible__subs, .slow#month_container, #yearly_monthly:checked ~ .slow#year_container, .slow.container__hidden__subs, .slow#year_container, #yearly_monthly:checked ~ .slow#month_container, #input-subscription-modal:checked ~ .slow#modal-container, #input-subscription-modal:checked ~ #modal-container .slow#modal-content {
+.animated.slow, .slow.menu__visible, .slow#month_container, #yearly_monthly:checked ~ .slow#year_container, .slow.menu__hidden, .slow#year_container, #yearly_monthly:checked ~ .slow#month_container {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .slower.container__visible__subs, .slower#month_container, #yearly_monthly:checked ~ .slower#year_container, .slower.container__hidden__subs, .slower#year_container, #yearly_monthly:checked ~ .slower#month_container, #input-subscription-modal:checked ~ .slower#modal-container, #input-subscription-modal:checked ~ #modal-container .slower#modal-content {
+.animated.slower, .slower.menu__visible, .slower#month_container, #yearly_monthly:checked ~ .slower#year_container, .slower.menu__hidden, .slower#year_container, #yearly_monthly:checked ~ .slower#month_container {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container, .container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container, #input-subscription-modal:checked ~ #modal-container, #input-subscription-modal:checked ~ #modal-container #modal-content {
+  .animated, .menu__visible, #month_container, #yearly_monthly:checked ~ #year_container, .menu__hidden, #year_container, #yearly_monthly:checked ~ #month_container {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2430,34 +2430,36 @@
 .perks_container {
   transition: border-bottom 0.3s; }
 
-.container__visible__subs, #month_container, #yearly_monthly:checked ~ #year_container {
-  transition: display 0.5s;
-  -webkit-transition: display 0.5s;
+.menu__visible, #month_container, #yearly_monthly:checked ~ #year_container {
+  display: block;
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  display: block; }
+  -moz-animation-delay: 0s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s; }
 
-.container__hidden__subs, #year_container, #yearly_monthly:checked ~ #month_container {
-  transition: display 0.5s;
-  -webkit-transition: display 0.5s;
+.menu__hidden, #year_container, #yearly_monthly:checked ~ #month_container {
+  display: none;
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  display: none; }
+  -moz-animation-delay: 0s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s; }
 
 .subscription__card {
   border-radius: 0.25rem;
-  width: 25%;
+  width: 20%;
   height: auto;
+  margin-right: 15px;
+  margin-left: 15px;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s; }
   .subscription__card:hover {
     z-index: 10;
-    transform: scale(1.1); }
+    transform: scale(1.23); }
     .subscription__card:hover .perks_container {
       border-bottom: 1px solid #dddddd; }
 
@@ -2474,17 +2476,6 @@
   display: none;
   visibility: hidden; }
 
-#input-subscription-modal:checked ~ #modal-container {
-  display: block;
-  visibility: visible;
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s; }
-  #input-subscription-modal:checked ~ #modal-container #modal-content {
-    animation-delay: 0.4s;
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s; }
-
 .label_switch {
   width: calc( 60px * 2.5 );
   height: 60px; }
@@ -2494,7 +2485,7 @@
   .rect-flip .layer {
     background-color: #c0ebf7; }
   .rect-flip .knobs {
-    perspective: calc( 60px * 2.5 ); }
+    perspective: calc( calc( 60px * 2.5 ) + 15px ); }
     .rect-flip .knobs:before, .rect-flip .knobs:after, .rect-flip .knobs span {
       position: absolute;
       top: 4px;
@@ -2531,5 +2522,93 @@
 #yearly_monthly:checked ~ #rect-flip .rect-flip .knobs span {
   transform: rotateY(-180deg);
   background-color: #2cea52; }
+
+@-moz-keyframes fadeInMenus {
+  0% {
+    display: none;
+    opacity: 0; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  100% {
+    display: block;
+    opacity: 1; } }
+@-webkit-keyframes fadeInMenus {
+  0% {
+    display: none;
+    opacity: 0; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  100% {
+    display: block;
+    opacity: 1; } }
+@keyframes fadeInMenus {
+  0% {
+    display: none;
+    opacity: 0; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  100% {
+    display: block;
+    opacity: 1; } }
+.fadeInMenus, #month_container, #yearly_monthly:checked ~ #year_container {
+  animation-name: fadeInMenus;
+  -webkit-animation-name: fadeInMenus;
+  -moz-animation-name: fadeInMenus; }
+
+@-moz-keyframes fadeOutMenus {
+  0% {
+    display: block;
+    opacity: 1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  100% {
+    display: none;
+    opacity: 0; } }
+@-webkit-keyframes fadeOutMenus {
+  0% {
+    display: block;
+    opacity: 1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  100% {
+    display: none;
+    opacity: 0; } }
+@keyframes fadeOutMenus {
+  0% {
+    display: block;
+    opacity: 1; }
+  0.01% {
+    display: block;
+    opacity: 0.5; }
+  0.001% {
+    display: block;
+    opacity: 0.1; }
+  100% {
+    display: none;
+    opacity: 0; } }
+.fadeOutMenus, #year_container, #yearly_monthly:checked ~ #month_container {
+  animation-name: fadeOutMenus;
+  -webkit-animation-name: fadeOutMenus;
+  -moz-animation-name: fadeOutMenus; }
 
 /*# sourceMappingURL=subscription_styles.css.map */
