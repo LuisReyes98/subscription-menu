@@ -2486,34 +2486,34 @@
     -moz-animation-delay: 0.4s; }
 
 .label_switch {
-  width: calc( 50px * 2.5 );
-  height: 50px; }
+  width: calc( 60px * 2.5 );
+  height: 60px; }
 
 .rect-flip {
   overflow: visible; }
   .rect-flip .layer {
     background-color: #c0ebf7; }
   .rect-flip .knobs {
-    perspective: calc( 50px * 2.5 ); }
+    perspective: calc( 60px * 2.5 ); }
     .rect-flip .knobs:before, .rect-flip .knobs:after, .rect-flip .knobs span {
       position: absolute;
       top: 4px;
       border-radius: 2px; }
     .rect-flip .knobs:after, .rect-flip .knobs:before {
-      width: calc( (calc( 50px * 2.5 ) - 6px ) / 2 );
-      height: calc( 50px - 5px );
+      width: calc( (calc( 60px * 2.5 ) - 6px ) / 2 );
+      height: calc( 60px - 5px );
       color: #111111;
-      font-size: 1em;
+      font-size: calc( 60px / 2.85);
       font-weight: bold;
       text-align: center;
       line-height: 1;
-      padding-top: calc( 50px / 5);
+      padding-top: calc( 60px / 5);
       padding-left: 6px;
       padding-right: 6px; }
     .rect-flip .knobs span {
       right: 4px;
-      width: calc( (calc( 50px * 2.5 ) - 4px ) / 2.1 );
-      height: calc( 50px  - 10px);
+      width: calc( (calc( 60px * 2.5 ) - 4px ) / 2.1 );
+      height: calc( 60px  - 10px);
       background-color: #2cdaea;
       transform: rotateY(0);
       transform-origin: 0% 50%;
