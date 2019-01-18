@@ -1,0 +1,59 @@
+$ribbon_color: #D4AF37;
+$tail: darken($ribbon_color, 5%);
+$ribbonSize: 0.2em;
+$fontSize: 1.5em;
+
+
+.ribbon_container, .ribbon_container:before, .ribbon_container:after {
+  box-sizing: border-box;
+}
+
+.ribbon_container  {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+}
+
+.ribbon {
+  left: -6px;
+  top: -6px;
+  background: $ribbon_color;
+  display: inline-block;
+  width: 60%;
+  color: white;
+  padding: $ribbonSize 0.3em;
+  font-weight: 900;
+  font-size: $fontSize;
+  letter-spacing: 0.2em;
+  position: absolute;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transform: rotate(-20deg) skew(-20deg, 10deg);
+
+  &:before,
+  &:after {
+    content: "";
+    width: 0;
+    height: 1.6em;
+    display: block;
+    background: #b9992f;
+    position: absolute;
+    border-style: solid;
+    border-width: calc( #{$ribbonSize} + 0.05em);
+    z-index: -1; // only necessary for flat (transform-style)
+    transform: translateZ(-1em); // orders the ribbon tails
+  }
+
+  &:before {
+    left: $ribbonSize * -1;
+    top: $ribbonSize;
+    border-color: $tail darken($tail, 10%) $tail $tail;
+  }
+
+  &:after {
+    right: $ribbonSize * -1;
+    top: $ribbonSize * -1;
+    border-color: $tail $tail $tail darken($tail, 10%);
+  }
+}

@@ -2,3 +2,4 @@ text-white
 bg-pink-darker
 py-5
 px-2
+subscription_header

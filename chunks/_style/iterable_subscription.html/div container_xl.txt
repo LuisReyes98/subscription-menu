@@ -1,8 +1,9 @@
 w-full
+flex
+flex-wrap
+p-2
 text-center
 justify-center
 content-center
 px-2
 py-2
-flex
-flex-wrap

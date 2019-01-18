@@ -1,5 +1,4 @@
 subscription__card
-overflow-hidden
 rounded
 mx-2
 my-2

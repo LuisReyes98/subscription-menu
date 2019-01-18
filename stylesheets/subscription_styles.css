@@ -2430,6 +2430,9 @@
 .perks_container {
   transition: border-bottom 0.3s; }
 
+.yearly_montly_container {
+  margin-top: 20px; }
+
 .menu__visible, #month_container, #yearly_monthly:checked ~ #year_container {
   display: block;
   animation-delay: 0s;
@@ -2468,6 +2471,8 @@
     transform: scale(1.23); }
     .subscription__card:hover .perks_container {
       border-bottom: 1px solid #dddddd; }
+  .subscription__card .subscription_header .subscription_plan {
+    margin-top: 40px; }
 
 .subscription__button {
   display: inline-block;
@@ -2616,5 +2621,49 @@
   animation-name: fadeOutMenus;
   -webkit-animation-name: fadeOutMenus;
   -moz-animation-name: fadeOutMenus; }
+
+.ribbon_container, .ribbon_container:before, .ribbon_container:after {
+  box-sizing: border-box; }
+
+.ribbon_container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transform: translate3d(0, 0, 0); }
+
+.ribbon {
+  left: -6px;
+  top: -6px;
+  background: #D4AF37;
+  display: inline-block;
+  width: 60%;
+  color: white;
+  padding: 0.2em 0.3em;
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  position: absolute;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transform: rotate(-20deg) skew(-20deg, 10deg); }
+  .ribbon:before, .ribbon:after {
+    content: "";
+    width: 0;
+    height: 1.6em;
+    display: block;
+    background: #b9992f;
+    position: absolute;
+    border-style: solid;
+    border-width: calc( 0.2em + 0.05em);
+    z-index: -1;
+    transform: translateZ(-1em); }
+  .ribbon:before {
+    left: -0.2em;
+    top: 0.2em;
+    border-color: #c7a22b #9d8022 #c7a22b #c7a22b; }
+  .ribbon:after {
+    right: -0.2em;
+    top: -0.2em;
+    border-color: #c7a22b #c7a22b #c7a22b #9d8022; }
 
 /*# sourceMappingURL=subscription_styles.css.map */
