@@ -1,0 +1,5 @@
+text-white
+bg-teal-darker
+py-5
+px-2
+subscription_header

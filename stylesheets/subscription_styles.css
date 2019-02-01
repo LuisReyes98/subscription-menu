@@ -2428,7 +2428,7 @@
     -webkit-transition: none !important;
     transition: none !important; } }
 .perks_container {
-  height: 50%;
+  height: calc( 100% - 250px );
   transition: border-bottom 0.3s; }
 
 .yearly_montly_container {
@@ -2460,7 +2460,7 @@
 
 .subscription__card {
   border-radius: 0.25rem;
-  width: 20%;
+  width: 19%;
   margin-right: 15px;
   margin-left: 15px;
   transition: all 0.3s;
@@ -2468,11 +2468,13 @@
   -moz-transition: all 0.3s; }
   .subscription__card:hover {
     z-index: 10;
-    transform: scale(1.23); }
+    transform: scale(1.22); }
     .subscription__card:hover .perks_container {
       border-bottom: 1px solid #dddddd; }
   .subscription__card .subscription_header .subscription_plan {
     margin-top: 40px; }
+  .subscription__card .subscription__footer {
+    position: relative; }
   .subscription__card .subscription__button {
     display: inline-block;
     font-weight: bold;

@@ -38,81 +38,11 @@
   <!-- Yearly subscript -->
   <div yearly_pack id="year_container">
     <div plan_container>
-      <div subscription_container>
-        <div yellow_header>
-          <h2 subscription_plan>Basic</h2>
-        </div>
-        <div yellow_body>
-          <h2 price>250$</h2>
-          <h3>once a year</h3>
-        </div>
-        <div perks_section>
-          <p padding_x_y>Full access</p>
-          <p padding_x_y>Documentation</p>
-          <p padding_x_y>Customers Support</p>
-          <p padding_x_y>Free Updates</p>
-          <p padding_x_y>Unlimited Domains</p>
-        </div>
-        <div subscription_footer>
-          <a yellow_button href="#" for="input-subscription-modal">
-            Sign up
-          </a>
-        </div>     
+      {% include "chunks/subs_yearly_a.html" %}
       
-      </div>
+      {% include "chunks/subs_yearly_b.html" %}
       
-      <div subscription_container>
-        <div pink_header>
-          <div ribbon_container >
-            <div component_ribbon contenteditable='true'>
-              <i star_icon></i>
-            </div>
-          </div>
-          <h2 subscription_plan>Standard</h2>
-        </div>
-        <div pink_body>
-          <h2 price>350$</h2>
-          <h3>once a year</h3>
-        </div>
-        <div perks_section>
-          <p padding_x_y>Full access</p>
-          <p padding_x_y>Documentation</p>
-          <p padding_x_y>Customers Support</p>
-          <p padding_x_y>Free Updates</p>
-          <p padding_x_y>Unlimited Domains</p>
-    
-        </div>
-        <div subscription_footer>
-          <a pink_button href="#" for="input-subscription-modal">
-            Sign up
-          </a>
-        </div>        
-      
-      </div>
-      
-      <div subscription_container>
-        <div teal_header>
-          <h2 subscription_plan>Premium</h2>
-        </div>
-        <div teal_body>
-          <h2 price>500$</h2>
-          <h3>once a year</h3>
-        </div>
-        <div perks_section>
-          <p padding_x_y>Full access</p>
-          <p padding_x_y>Documentation</p>
-          <p padding_x_y>Customers Support</p>
-          <p padding_x_y>Free Updates</p>
-          <p padding_x_y>Unlimited Domains</p>
-    
-        </div>
-        <div subscription_footer>
-          <a teal_button href="#" for="input-subscription-modal">
-            Sign up
-          </a>
-        </div>
-
-      </div>
+      {% include "chunks/subs_yearly_c.html" %}
 
     </div>
 

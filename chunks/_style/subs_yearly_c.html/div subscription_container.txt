@@ -1,0 +1,6 @@
+subscription__card
+rounded
+mx-2
+my-2
+overflow-hidden
+bg-white

@@ -1,0 +1,26 @@
+<div subscription_container>
+  <div yellow_header>
+    <h2 subscription_plan>
+      {{ subscriptions.yearly.basic.name | safe }}
+    </h2>
+  </div>
+  <div yellow_body>
+    <h2 price>{{ subscriptions.yearly.basic.cost | safe }}$</h2>
+    <h3>per month</h3>
+  </div>
+
+  <div perks_section>
+    {% for perk in subscriptions.yearly.basic.perks %}
+
+    <p padding_x_y>{{perk}}</p>
+
+    {% endfor %}
+
+  </div>
+  <div subscription_footer>
+    <a yellow_button href="{{ subscriptions.yearly.basic.link | safe }}" for="input-subscription-modal">
+      Sign up
+    </a>
+  </div>
+
+</div>

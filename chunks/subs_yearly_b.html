@@ -1,0 +1,31 @@
+<div subscription_container>
+  <div pink_header>
+    <div ribbon_container>
+      <div component_ribbon contenteditable='true'>
+        <i star_icon></i>
+      </div>
+    </div>
+    <h2 subscription_plan>
+      {{ subscriptions.yearly.standard.name | safe }}
+    </h2>
+  </div>
+  <div pink_body>
+    <h2 price>{{ subscriptions.yearly.standard.cost | safe }}$</h2>
+    <h3>per month</h3>
+  </div>
+
+  <div perks_section>
+    {% for perk in subscriptions.yearly.standard.perks %}
+
+    <p padding_x_y>{{perk}}</p>
+
+    {% endfor %}
+
+  </div>
+  <div subscription_footer>
+    <a pink_button href="{{ subscriptions.yearly.standard.link | safe }}" for="input-subscription-modal">
+      Sign up
+    </a>
+  </div>
+
+</div>
