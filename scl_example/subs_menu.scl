@@ -1,0 +1,76 @@
+yearly = {
+  basic = {
+    name = "Basically",
+    perks = [
+      "Hi",
+      "YEs"
+    ],
+    cost = 100,
+    link = "#"
+  },
+  standard = {
+    name = "Standard",
+    perks = [
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+    ],
+    cost = 400,
+    link = "#"
+  },
+  premium = {
+    name = "premium",
+    perks = [
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+    ],
+    cost = 800,
+    link = "#"
+  }
+}
+
+monthly = {
+
+  basic = {
+    name = "Basic",
+    perks = [
+      "Hi",
+      "YEs"
+    ],
+    cost = 10,
+    link = "#"
+  },
+  standard = {
+    name = "Standard",
+    perks = [
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+    ],
+    cost = 40,
+    link = "#"
+  },
+  premium = {
+    name = "premium",
+    perks = [
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+      "Hi",
+      "YEs",
+    ],
+    cost = 80,
+    link = "#"
+  }
+}
+
+some = {
+  hey = "hola"
+}
