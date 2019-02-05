@@ -1,6 +1,6 @@
 <div container_xl >
   <input hidden_input type="checkbox" id="yearly_monthly">
-  <h1 title_xl>Subscription Sign up Form</h1>
+  <h1 title_xl>Subscription Plans</h1>
 
       
   <section id="rect-flip">
@@ -24,12 +24,16 @@
   <!-- Montly prices -->
   <div montly_pack id="month_container">
     <div plan_container>
+      {% if subscriptions.monthly %}
 
-      {% include "chunks/subs_monthly_a.html" %}
+        {% include "chunks/subs_monthly_a.html" %}
+        
+        {% include "chunks/subs_monthly_b.html" %}
+
+        {% include "chunks/subs_monthly_c.html" %}
+
+      {%endif%}
       
-      {% include "chunks/subs_monthly_b.html" %}
-
-      {% include "chunks/subs_monthly_c.html" %}
                 
     </div>
   </div>
@@ -38,11 +42,15 @@
   <!-- Yearly subscript -->
   <div yearly_pack id="year_container">
     <div plan_container>
-      {% include "chunks/subs_yearly_a.html" %}
+      {% if subscriptions.yearly %}
       
-      {% include "chunks/subs_yearly_b.html" %}
+        {% include "chunks/subs_yearly_a.html" %}
+        
+        {% include "chunks/subs_yearly_b.html" %}
+        
+        {% include "chunks/subs_yearly_c.html" %}
       
-      {% include "chunks/subs_yearly_c.html" %}
+      {%endif%}
 
     </div>
 

@@ -26,8 +26,8 @@ yearly = {
       "YEs",
       "Hi",
       "YEs",
-      "Hi",
-      "YEs",
+      "Better things that you think",
+
     ],
     cost = 800,
     link = "#"
@@ -63,8 +63,7 @@ monthly = {
       "YEs",
       "Hi",
       "YEs",
-      "Hi",
-      "YEs",
+      "Better things that you think",
     ],
     cost = 80,
     link = "#"

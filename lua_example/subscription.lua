@@ -4,5 +4,5 @@ local homepage = render(torchbear.settings.theme .. "/index.html", {
   articles = {},
   slides = slides,
  
-  subscriptions = torchbear.settings.subscriptions, --this is the line
+  subscriptions = torchbear.settings.subs_menu, --this is the line
 })
